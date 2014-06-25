@@ -8,7 +8,7 @@ Example of chat on web browser using groovy and vert.x
 ```
 git clone https://github.com/sudahiroshi/wschat.git
 cd wschat
-vertx run wxchat.groovy
+vertx run wschat.groovy
 ```
 
 Then, you can access ```http://<IP address>:8000/``` from your web browser.
