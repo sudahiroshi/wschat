@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+	<meta charset = "utf-8" >
+    <title>WebSocket Chat</title>
+    <link rel='stylesheet' href='/style.css' />
+	<script type="text/javascript" src="sample.coe.jsx.js"></script>
+  </head>
+  <body>
+<!--<script type="text/javascript">
+
+// connect to server
+var ws = new WebSocket( 'ws://' + location.hostname + ':' + location.port + '/chat' );
+
+// when connected
+ws.onopen = function( event ) {
+  document.getElementById( "connectId" ).innerHTML = "connected";
+  //document.getElementById( "connectId" ).innerHTML = "your ID::" + obj.message;
+};
+
+// when receive a message
+ws.onmessage = function( event ) {
+	document.getElementById( "receiveMsg" ).appendChild( document.createTextNode( event.data  ) );
+	document.getElementById( "receiveMsg" ).appendChild( document.createElement( "br" ) );
+};
+
+// message sending
+function SendMsg() {
+	var msg = document.getElementById( "message" ).value;
+console.log( msg );
+	ws.send( msg );
+}
+
+// disconect
+function DisConnect() {
+	ws.send(socket.socket.sessionid + " has been disconected.");
+	ws.close();
+}
+</script>-->
+    <h1>WebSocket Chat</h1>
+    <div id="connectId"></div>
+    <input type="text" id="message" value="">
+    <input type="button" value="send" onclick="SendMsg()">
+    <input type="button" value="disconect" onclick="DisConnect()">
+    <div id="receiveMsg"></div>
+  </body>
+</html>
