@@ -412,6 +412,27 @@ Palett.prototype.palett_Draw$ = function () {
 			return v;
 		}(this.color[j])), j * 50 + 50);
 		this.ctx.stroke();
+		this.ctx.beginPath();
+		this.ctx.fillStyle = "rgb(" + ((function (v) {
+			if (! (v != null)) {
+				debugger;
+				throw new Error("[pen3.jsx:108:50] null access\n            this.ctx.fillStyle = \"rgb(\"+this.color[0]+\",\"+this.color[1]+\",\"+this.color[2]+\")\";\n                                                  ^\n");
+			}
+			return v;
+		}(this.color[0])) + "") + "," + ((function (v) {
+			if (! (v != null)) {
+				debugger;
+				throw new Error("[pen3.jsx:108:68] null access\n            this.ctx.fillStyle = \"rgb(\"+this.color[0]+\",\"+this.color[1]+\",\"+this.color[2]+\")\";\n                                                                    ^\n");
+			}
+			return v;
+		}(this.color[1])) + "") + "," + ((function (v) {
+			if (! (v != null)) {
+				debugger;
+				throw new Error("[pen3.jsx:108:86] null access\n            this.ctx.fillStyle = \"rgb(\"+this.color[0]+\",\"+this.color[1]+\",\"+this.color[2]+\")\";\n                                                                                      ^\n");
+			}
+			return v;
+		}(this.color[2])) + "") + ")";
+		this.ctx.fillRect(0, 150, 255, 200);
 	}
 	console.log("OK");
 };
@@ -434,14 +455,14 @@ Palett.prototype.start$ = function () {
 			es = (function ($v) {
 				if (! ($v == null || $v instanceof MouseEvent)) {
 					debugger;
-					throw new Error("[pen3.jsx:115:27] detected invalid cast, value is not an instance of the designated type or null\n                var es = e as MouseEvent;\n                           ^^\n");
+					throw new Error("[pen3.jsx:119:27] detected invalid cast, value is not an instance of the designated type or null\n                var es = e as MouseEvent;\n                           ^^\n");
 				}
 				return $v;
 			}(e));
 			ee = (function ($v) {
 				if (! ($v == null || $v instanceof Element)) {
 					debugger;
-					throw new Error("[pen3.jsx:116:35] detected invalid cast, value is not an instance of the designated type or null\n                var ee = es.target as Element;\n                                   ^^\n");
+					throw new Error("[pen3.jsx:120:35] detected invalid cast, value is not an instance of the designated type or null\n                var ee = es.target as Element;\n                                   ^^\n");
 				}
 				return $v;
 			}(es.target));
@@ -451,7 +472,7 @@ Palett.prototype.start$ = function () {
 			console.log("check0 " + ((function (v) {
 				if (! (v != null)) {
 					debugger;
-					throw new Error("[pen3.jsx:120:40] null access\n                log(\"check0 \"+this.color[0]);\n                                        ^\n");
+					throw new Error("[pen3.jsx:124:40] null access\n                log(\"check0 \"+this.color[0]);\n                                        ^\n");
 				}
 				return v;
 			}($this.color[0])) + ""));
@@ -464,27 +485,6 @@ Palett.prototype.start$ = function () {
 					$this.color[2] = x;
 				}
 			}
-			$this.ctx.beginPath();
-			$this.ctx.fillStyle = "rgb(" + ((function (v) {
-				if (! (v != null)) {
-					debugger;
-					throw new Error("[pen3.jsx:131:54] null access\n                this.ctx.fillStyle = \"rgb(\"+this.color[0]+\",\"+this.color[1]+\",\"+this.color[2]+\")\";\n                                                      ^\n");
-				}
-				return v;
-			}($this.color[0])) + "") + "," + ((function (v) {
-				if (! (v != null)) {
-					debugger;
-					throw new Error("[pen3.jsx:131:72] null access\n                this.ctx.fillStyle = \"rgb(\"+this.color[0]+\",\"+this.color[1]+\",\"+this.color[2]+\")\";\n                                                                        ^\n");
-				}
-				return v;
-			}($this.color[1])) + "") + "," + ((function (v) {
-				if (! (v != null)) {
-					debugger;
-					throw new Error("[pen3.jsx:131:90] null access\n                this.ctx.fillStyle = \"rgb(\"+this.color[0]+\",\"+this.color[1]+\",\"+this.color[2]+\")\";\n                                                                                          ^\n");
-				}
-				return v;
-			}($this.color[2])) + "") + ")";
-			$this.ctx.fillRect(0, 150, 255, 200);
 			msg = ({ "rgb": $this.color });
 			$this.nl.emit$SHX("color", msg);
 			$this.palett_Draw$();
@@ -500,7 +500,7 @@ Palett.prototype.start$ = function () {
 		color = (function ($v) {
 			if (! ($v == null || $v instanceof Array)) {
 				debugger;
-				throw new Error("[pen3.jsx:147:36] detected invalid cast, value is not an Array or null\n            var color = data[\"rgb\"] as number[];\n                                    ^^\n");
+				throw new Error("[pen3.jsx:148:36] detected invalid cast, value is not an Array or null\n            var color = data[\"rgb\"] as number[];\n                                    ^^\n");
 			}
 			return $v;
 		}(data.rgb));
@@ -508,19 +508,19 @@ Palett.prototype.start$ = function () {
 		$this.ctx.fillStyle = "rgb(" + ((function (v) {
 			if (! (v != null)) {
 				debugger;
-				throw new Error("[pen3.jsx:149:45] null access\n            this.ctx.fillStyle = \"rgb(\"+color[0]+\",\"+color[1]+\",\"+color[2]+\")\";\n                                             ^\n");
+				throw new Error("[pen3.jsx:150:45] null access\n            this.ctx.fillStyle = \"rgb(\"+color[0]+\",\"+color[1]+\",\"+color[2]+\")\";\n                                             ^\n");
 			}
 			return v;
 		}(color[0])) + "") + "," + ((function (v) {
 			if (! (v != null)) {
 				debugger;
-				throw new Error("[pen3.jsx:149:58] null access\n            this.ctx.fillStyle = \"rgb(\"+color[0]+\",\"+color[1]+\",\"+color[2]+\")\";\n                                                          ^\n");
+				throw new Error("[pen3.jsx:150:58] null access\n            this.ctx.fillStyle = \"rgb(\"+color[0]+\",\"+color[1]+\",\"+color[2]+\")\";\n                                                          ^\n");
 			}
 			return v;
 		}(color[1])) + "") + "," + ((function (v) {
 			if (! (v != null)) {
 				debugger;
-				throw new Error("[pen3.jsx:149:71] null access\n            this.ctx.fillStyle = \"rgb(\"+color[0]+\",\"+color[1]+\",\"+color[2]+\")\";\n                                                                       ^\n");
+				throw new Error("[pen3.jsx:150:71] null access\n            this.ctx.fillStyle = \"rgb(\"+color[0]+\",\"+color[1]+\",\"+color[2]+\")\";\n                                                                       ^\n");
 			}
 			return v;
 		}(color[2])) + "") + ")";
@@ -541,7 +541,7 @@ function _Main$main$AS(args) {
 	canvas2 = (function ($v) {
 		if (! ($v == null || $v instanceof HTMLCanvasElement)) {
 			debugger;
-			throw new Error("[pen3.jsx:157:39] detected invalid cast, value is not an instance of the designated type or null\n        var canvas2 = dom.id(\"palett\") as HTMLCanvasElement;\n                                       ^^\n");
+			throw new Error("[pen3.jsx:158:39] detected invalid cast, value is not an instance of the designated type or null\n        var canvas2 = dom.id(\"palett\") as HTMLCanvasElement;\n                                       ^^\n");
 		}
 		return $v;
 	}(dom$id$S("palett")));
@@ -549,7 +549,7 @@ function _Main$main$AS(args) {
 	canvas1 = (function ($v) {
 		if (! ($v == null || $v instanceof HTMLCanvasElement)) {
 			debugger;
-			throw new Error("[pen3.jsx:160:42] detected invalid cast, value is not an instance of the designated type or null\n        var canvas1 =  dom.id(\"myCanvas\") as HTMLCanvasElement;\n                                          ^^\n");
+			throw new Error("[pen3.jsx:161:42] detected invalid cast, value is not an instance of the designated type or null\n        var canvas1 =  dom.id(\"myCanvas\") as HTMLCanvasElement;\n                                          ^^\n");
 		}
 		return $v;
 	}(dom$id$S("myCanvas")));
